@@ -3,6 +3,8 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import { increment, decrement, incrementByAmount } from '../redux/counterSlice';
+import SecondItems from '../components/secondItems';
+
 
 const FirstScreen = () => {
   const count = useSelector((state) => state.counter.value);
@@ -10,6 +12,7 @@ const FirstScreen = () => {
 
   return (
     <View style={styles.container}>
+      <SecondItems/>
       <Text style={styles.text}>Count: {count}</Text>
       <View style={styles.buttonContainer}>
         <Button title="Increment" onPress={() => dispatch(increment())} />
