@@ -5,6 +5,7 @@ export default function SecondItems() {
   return (
     <View>
       <Text>SecondItems</Text>
+      <Text>there is text for branch added here</Text>
     </View>
   )
 }
